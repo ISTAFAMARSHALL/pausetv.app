@@ -10,12 +10,30 @@ Pause TeeVee is a player only. It does not provide, sell, host, or bundle channe
 
 Verified product functionality represented on the site:
 
-- Live TV with a program guide (EPG)
+- Live TV with a program guide (EPG), channel numbering, hide/reorder, custom XMLTV guide source
+- Multi-view: 2 channels (Plus) or 4 channels (Pro) on Apple TV, Fire TV and iPhone
 - Movies and series from the user’s connected service
-- Continue Watching, favorites, and search
-- Picture in Picture plus audio and subtitle controls on supported devices
+- Continue Watching, favorites, and search; cloud sync across devices (Sync plan and up)
+- Picture in Picture, audio and subtitle controls, online subtitle search (Plus), sleep timer
+- Offline downloads and programme reminders (Pro)
+- Parental PIN app lock and rating filters (all plans)
+- Accent / background theme packs (Plus, more on Pro)
 - Remote-first Apple TV and Fire TV experience
 - Xtream Codes and M3U provider setup
+
+## Plans and prices
+
+The pricing section is driven by `PLANS` in `lib/constants.ts`, which mirrors the in-app paywall
+(`teevee-app/native/screens/PaywallScreen.tsx` and `native/lib/entitlements.ts`). When a price or
+feature list changes in the app, change it there too.
+
+| Plan | Monthly | Yearly |
+| --- | --- | --- |
+| Free | $0 | — |
+| Sync | $1.99 | $14.99 |
+| Plus | $4.99 | $39.99 |
+| Pro | $9.99 | $79.99 |
+| Lifetime | $49.99 one time | — |
 
 ## Supported access paths
 
@@ -23,7 +41,7 @@ Verified product functionality represented on the site:
 | --- | --- |
 | iPhone / iPad | [App Store](https://apps.apple.com/us/app/pause-teevee/id6777469362) |
 | Apple TV | Uses the same Pause TeeVee App Store record |
-| Amazon Fire TV | Sideload via Downloader code `7344014` or the direct APK link configured in `lib/constants.ts` |
+| Amazon Fire TV | Sideload via Downloader code `7344014` or the direct APK link configured in `lib/constants.ts` (`FIRE_TV_VERSION` + `AMAZON_SIDELOAD_APK_LINK`, currently v1.1.0 / vc95) |
 
 ## Run locally
 
@@ -64,5 +82,5 @@ The site uses the approved Pause TeeVee native app icon and a Knicks Blue / Knic
 
 1. Point `www.pausetv.app` to the host serving this project.
 2. Confirm the current App Store record continues to include the intended Apple TV version.
-3. Update the Fire TV APK URL in `lib/constants.ts` when a new release is published.
+3. Update `FIRE_TV_VERSION` and the APK URL in `lib/constants.ts` when a new Fire TV release is published, and re-point the Downloader code at the new APK.
 4. Confirm the linked privacy policy, terms, and support pages remain current.

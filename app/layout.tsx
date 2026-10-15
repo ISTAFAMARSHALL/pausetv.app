@@ -4,7 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.pausetv.app'),
   title: 'Pause TeeVee | Your TV, beautifully',
-  description: 'A polished player for the streaming service you already use.',
+  description: 'A polished player for the streaming service you already use. Live TV guide, multi-view, offline downloads and cloud sync on iPhone, Apple TV and Fire TV.',
   manifest: '/site.webmanifest',
   icons: {
     icon: [
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: '/',
     title: 'Pause TeeVee | Your TV, beautifully',
-    description: 'A polished player for the streaming service you already use.',
+    description: 'A polished player for the streaming service you already use. Live TV guide, multi-view, offline downloads and cloud sync on iPhone, Apple TV and Fire TV.',
     siteName: 'Pause TeeVee',
     images: [{ url: '/og-image.png', width: 1731, height: 909, alt: 'Pause TeeVee cinematic television experience' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pause TeeVee | Your TV, beautifully',
-    description: 'A polished player for the streaming service you already use.',
+    description: 'A polished player for the streaming service you already use. Live TV guide, multi-view, offline downloads and cloud sync on iPhone, Apple TV and Fire TV.',
     images: ['/og-image.png'],
   },
 }
