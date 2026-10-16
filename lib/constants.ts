@@ -3,8 +3,8 @@ export const IPHONE_APP_LINK = 'https://apps.apple.com/us/app/pause-teevee/id677
 // This is the same App Store record; Apple presents the supported platform version.
 export const APPLE_TV_APP_LINK = IPHONE_APP_LINK
 // Latest Fire TV release on github.com/ISTAFAMARSHALL/teevee-firetv-releases. Update both lines together.
-export const FIRE_TV_VERSION = '1.1.0'
-export const AMAZON_SIDELOAD_APK_LINK = 'https://github.com/ISTAFAMARSHALL/teevee-firetv-releases/releases/download/firetv-v1.1.0-vc95/application-2b353cd1-4b0c-4461-8702-16ec5b42605b.apk'
+export const FIRE_TV_VERSION = '1.2.0'
+export const AMAZON_SIDELOAD_APK_LINK = 'https://github.com/ISTAFAMARSHALL/teevee-firetv-releases/releases/download/firetv-v1.2.0-vc97/TeeVee-firetv-1.2.0-vc97.apk'
 export const AFTV_CODE = '7344014'
 
 export const LINKS = {
