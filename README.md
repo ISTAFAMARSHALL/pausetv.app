@@ -41,7 +41,7 @@ feature list changes in the app, change it there too.
 | --- | --- |
 | iPhone / iPad | [App Store](https://apps.apple.com/us/app/pause-teevee/id6777469362) |
 | Apple TV | Uses the same Pause TeeVee App Store record |
-| Amazon Fire TV | Sideload via Downloader code `4935510` or the direct APK link configured in `lib/constants.ts` (`FIRE_TV_VERSION` + `AMAZON_SIDELOAD_APK_LINK`, currently v1.2.0 / vc97) |
+| Amazon Fire TV | Sideload via Downloader code `2552539` or the direct APK link configured in `lib/constants.ts` (`FIRE_TV_VERSION` + `AMAZON_SIDELOAD_APK_LINK`, currently v1.2.1 / vc106) |
 
 ## Run locally
 
